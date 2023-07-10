@@ -5,6 +5,9 @@ function App() {
   const logoutFunc = () => {
     console.log("call api logout");
   };
+  const callApi = () => {
+    console.log("call api to login");
+  };
 
   return <div>Hello world ammend</div>;
 }
