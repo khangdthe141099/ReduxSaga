@@ -18,6 +18,7 @@ function App() {
   const rebase6 = "rebase6";
 
   const rebase7 = "rebase7";
+  const test = "test";
 
   const commit1 = 1;
 
