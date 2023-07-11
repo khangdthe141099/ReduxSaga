@@ -23,6 +23,8 @@ function App() {
   const commit1 = 1;
   const commit2 = 2;
 
+  const cherry_pick = "cherry_pick";
+
   return <div>Hello world ammend</div>;
 }
 
