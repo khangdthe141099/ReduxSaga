@@ -21,6 +21,7 @@ function App() {
   const test = "test";
 
   const commit1 = 1;
+  const commit2 = 2;
 
   return <div>Hello world ammend</div>;
 }
