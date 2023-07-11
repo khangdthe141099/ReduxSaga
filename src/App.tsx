@@ -9,6 +9,8 @@ function App() {
     console.log("call api to login");
   };
 
+  const rebase1 = "rebase1";
+
   return <div>Hello world ammend</div>;
 }
 
