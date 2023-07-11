@@ -10,6 +10,7 @@ function App() {
   };
 
   const rebase1 = "rebase1";
+  const rebase2 = "rebase2";
 
   return <div>Hello world ammend</div>;
 }
