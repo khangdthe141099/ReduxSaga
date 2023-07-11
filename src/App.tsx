@@ -11,6 +11,7 @@ function App() {
 
   const rebase1 = "rebase1";
   const rebase2 = "rebase2";
+  const rebase3 = "rebase3";
 
   return <div>Hello world ammend</div>;
 }
