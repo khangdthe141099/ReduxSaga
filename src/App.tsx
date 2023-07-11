@@ -13,6 +13,12 @@ function App() {
   const rebase2 = "rebase2";
   const rebase3 = "rebase3";
 
+  const rebase4 = "rebase4";
+  const rebase5 = "rebase5";
+  const rebase6 = "rebase6";
+
+  const rebase7 = "rebase7";
+
   return <div>Hello world ammend</div>;
 }
 
