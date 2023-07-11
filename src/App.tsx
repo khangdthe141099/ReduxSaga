@@ -19,6 +19,8 @@ function App() {
 
   const rebase7 = "rebase7";
 
+  const commit1 = 1;
+
   return <div>Hello world ammend</div>;
 }
 
