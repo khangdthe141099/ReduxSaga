@@ -1,0 +1,30 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(173, 173, 173);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-list {
+    margin: 0px 10px;
+}
+
+.btn {
+    border: 1px solid rgb(173, 173, 173);
+    margin: 10px 0px;
+    width: 20px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: aqua;
+}

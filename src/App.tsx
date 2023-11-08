@@ -1,31 +1,35 @@
-import "./App.css";
+import { useUser } from "./features/hook";
+import { fetchUserStart, fetchUserSuccess } from "./features/user/userSlice";
+import { useAppDispatch } from "./hooks/useStore";
+import { api } from "./lib/request";
+import { getUserDetail } from "./services/user";
 
 function App() {
-  const myName = "khang dev";
-  const logoutFunc = () => {
-    console.log("call api logout");
+  const user = useUser();
+
+  const dispatch = useAppDispatch();
+
+  const handleFetchUser = () => {
+    dispatch(
+      fetchUserStart({
+        name: "Hoang Anh",
+        company: "FPT Software",
+      })
+    );
   };
-  const callApi = () => {
-    console.log("call api to login");
+
+  const handleFetchUserAPI = async () => {
+    console.log('hehe', await getUserDetail());
+    
   };
 
-  const rebase1 = "rebase1";
-  const rebase2 = "rebase2";
-  const rebase3 = "rebase3";
-
-  const rebase4 = "rebase4";
-  const rebase5 = "rebase5";
-  const rebase6 = "rebase6";
-
-  const rebase7 = "rebase7";
-  const test = "test";
-
-  const commit1 = 1;
-  const commit2 = 2;
-
-  const cherry_pick = "cherry_pick";
-
-  return <div>Hello world ammend</div>;
+  return (
+    <>
+      <h1>Learn Saga</h1>
+      <button onClick={handleFetchUser}>Fetch user</button>
+      <button onClick={handleFetchUserAPI}>Fetch user api</button>
+    </>
+  );
 }
 
 export default App;
