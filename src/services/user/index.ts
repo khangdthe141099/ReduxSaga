@@ -1,10 +1,24 @@
-import axios from "axios";
+import { api } from "../../lib/request";
 
-export const getUserDetail = async () => {
+export const getUserDetail = (url: string) => {
   try {
-    const response = await axios.get("https://jsonplaceholder.typicode.com/users");
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return response.data;
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const response = api.get(url);
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-member-access
+    return response;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+export const createUser = (url: string, data: any) => {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    const response = api.post(url, data);
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return, @typescript-eslint/no-unsafe-member-access
+    return response;
   } catch (err) {
     console.log(err);
   }
